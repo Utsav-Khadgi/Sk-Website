@@ -516,3 +516,17 @@ button {
 .resize-transition-stopper * {
   transition: none !important;
 }
+
+
+/*for vide centralization*/
+.carwash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This makes it take the full height of the screen */
+}
+
+iframe {
+  width: 80%; /* Adjust as needed */
+  height: 60vh;
+}
