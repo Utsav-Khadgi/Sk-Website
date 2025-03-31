@@ -266,7 +266,9 @@
     <section class="contact py-5 container" id="contact">
       <!-- title -->
       <div class="title">
-        <h2>contact us</h2>
+      <!--  <h2>contact us</h2> -->
+           
+        <button id="contactButton" class="btn btn-dark">Contact Us</button>
         <div class="hoz-line"></div>
       </div>
       <!-- end of title -->
@@ -326,7 +328,17 @@
     </footer>
     <!-- end of footer -->
 
-  
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("contactButton").addEventListener("click", function() {
+      gtag("event", "button_click", {
+        event_category: "User Interaction",
+        event_label: "Clicked Contact Button"
+      });
+    });
+  });
+</script>
+
     <script src="myscript.js"></script>
   </body>
 </html>
